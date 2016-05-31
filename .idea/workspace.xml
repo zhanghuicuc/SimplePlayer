@@ -10,136 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1112f4aa-6900-400f-b8b8-ab3126af02e8" name="Default" comment="now able to download segments and make a buffer deque">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MediaObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MediaObjectBuffer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$DoBuffering.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MediaObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MediaObjectBuffer.java" />
-      <change type="DELETED" beforePath="D:\AndroidStudioProjects\SimplePlayer\app\build\intermediates\classes\debug\com\zhanghui\simpleplayer\MPDParser$2.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\AndroidStudioProjects\SimplePlayer\app\build\intermediates\classes\debug\com\zhanghui\simpleplayer\MPDParser$3.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\AndroidStudioProjects\SimplePlayer\app\build\intermediates\classes\debug\com\zhanghui\simpleplayer\MyVideoView.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\AndroidStudioProjects\SimplePlayer\app\src\main\java\com\zhanghui\simpleplayer\MyVideoView.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk$DownloadExternalConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk$DownloadExternalConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk$DownloadInternalConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk$DownloadInternalConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/AbstractChunk.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/AbstractMPDElement.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/AbstractMPDElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/AdaptationSet.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/AdaptationSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/BaseUrl.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/BaseUrl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ContentComponent.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ContentComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Descriptor.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Descriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/DownloadManager$DownloadThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/DownloadManager$DownloadThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/DownloadStateManager.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/network/DownloadStateManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/HTTPTransaction.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/HTTPTransaction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IBaseUrl.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IBaseUrl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IMPD.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IMPD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IMetrics.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IMetrics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ISegmentTemplate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ISegmentTemplate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ISegmentURL.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ISegmentURL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IURLType.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/IURLType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/MPD.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/MPD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MPDParser$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MPDParser$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MPDParser.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/MPDParser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Metrics.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Metrics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/MultipleSegmentBase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/MultipleSegmentBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/helper/Path.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/helper/Path.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Period.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Period.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ProgramInformation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/ProgramInformation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Range.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Range.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Representation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Representation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/RepresentationBase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/RepresentationBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Segment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Segment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentBase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentList.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SegmentManager.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SegmentManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentTemplate.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentTemplate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentTimeline.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentTimeline.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentURL.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SegmentURL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/SimplePlayerActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SubRepresentation.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/SubRepresentation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Subset.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Subset.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/TCPConnection.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/TCPConnection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/ThroughputMeasurement.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/metric/ThroughputMeasurement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Timeline.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/Timeline.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/URLType.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/mpd/URLType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/VideoPlayer$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/VideoPlayer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/VideoPlayer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/simpleplayer/VideoPlayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_5dcb7fac4ee198f84de8e9301928a103ddb52513.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/pre-dexed/debug/debug_5dcb7fac4ee198f84de8e9301928a103ddb52513.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/helper/myString.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/zhanghui/helper/myString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/network/AbstractChunk.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/network/AbstractChunk.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/AbstractMPDElement.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/AbstractMPDElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/AdaptationSet.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/AdaptationSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/BaseUrl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/BaseUrl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ContentComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ContentComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Descriptor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Descriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/DownloadManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/DownloadManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/network/DownloadStateManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/network/DownloadStateManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/HTTPTransaction.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/HTTPTransaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IAdaptationSet.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IAdaptationSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IBaseUrl.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IBaseUrl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IContentComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IContentComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IDescriptor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMPD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMPD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMPDElement.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMPDElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMetrics.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IMetrics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ISegmentTemplate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ISegmentTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ISegmentURL.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ISegmentURL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IURLType.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/IURLType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/MPD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/MPD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MPDParser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MPDParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Metrics.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Metrics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/MultipleSegmentBase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/MultipleSegmentBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/helper/Path.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/helper/Path.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Period.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Period.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ProgramInformation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/ProgramInformation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/zhanghui/simpleplayer/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/zhanghui/simpleplayer/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Range.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Range.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Representation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Representation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/RepresentationBase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/RepresentationBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Segment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Segment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentBase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/SegmentManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/SegmentManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentTemplate.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentTimeline.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentTimeline.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentURL.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SegmentURL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/SimplePlayerActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/SimplePlayerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SubRepresentation.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/SubRepresentation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Subset.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Subset.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/TCPConnection.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/TCPConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/ThroughputMeasurement.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/metric/ThroughputMeasurement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Timeline.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/Timeline.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/URLType.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/mpd/URLType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/VideoPlayer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/VideoPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_simple_player.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_simple_player.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_simple_player.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_simple_player.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/helper/myString.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/zhanghui/helper/myString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/videoview.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/videoview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/videoview.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/videoview.xml" />
+    <list default="true" id="1112f4aa-6900-400f-b8b8-ab3126af02e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimplePlayer.iws" />
@@ -190,8 +61,8 @@
       <file leaf-file-name="MediaObjectBuffer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MediaObjectBuffer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4257603">
-              <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.11270125">
+              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -293,6 +164,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="zhanghuicuc &lt;zhanghuicuc@gmail.com&gt;" />
         <option value="Hui Zhang &lt;zhanghuicuc@gmail.com&gt;" />
       </list>
     </option>
@@ -2786,6 +2658,13 @@
       <option name="number" value="Default" />
       <updated>1460016614514</updated>
     </task>
+    <task id="LOCAL-00001" summary="now able to download segments and make a buffer deque">
+      <created>1464698377124</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1464698377124</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2799,7 +2678,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21914648" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3252595" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2810,7 +2689,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33794695" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3217993" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3217993" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298731" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294621" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3534,8 +3413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhanghui/simpleplayer/MediaObjectBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4257603">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.11270125">
+          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
           <folding />
         </state>
       </provider>
