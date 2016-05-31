@@ -46,7 +46,7 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  \b NOTE:    If there is no identifier \em \$bandwidth\$ in the template then this parameter will not be used and can be set to 0.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToInitializationSegment     (Vector<IBaseUrl> baseurls, String representationID, int bandwidth);
+    public ISegment           ToInitializationSegment     (Vector<BaseUrl> baseurls, String representationID, int bandwidth);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents a Bitstream Switching Segment and can be downloaded.
@@ -58,7 +58,7 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  \b NOTE:    If there is no identifier \em \$bandwidth\$ in the template then this parameter will not be used and can be set to 0.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToBitstreamSwitchingSegment (Vector<IBaseUrl> baseurls, String representationID, int bandwidth);
+    public ISegment           ToBitstreamSwitchingSegment (Vector<BaseUrl> baseurls, String representationID, int bandwidth);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents a Media Segment and can be downloaded.
@@ -72,7 +72,7 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  This integer will be formated according to a possibly contained format tag in the \em \$Number\$ identifier.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           GetMediaSegmentFromNumber   (Vector<IBaseUrl> baseurls, String representationID, int bandwidth, int number);
+    public ISegment           GetMediaSegmentFromNumber   (Vector<BaseUrl> baseurls, String representationID, int bandwidth, int number);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents a Index Segment and can be downloaded.
@@ -86,7 +86,7 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  This integer will be formated according to a possibly contained format tag in the \em \$Number\$ identifier.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           GetIndexSegmentFromNumber   (Vector<IBaseUrl> baseurls, String representationID, int bandwidth, int number);
+    public ISegment           GetIndexSegmentFromNumber   (Vector<BaseUrl> baseurls, String representationID, int bandwidth, int number);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents a Media Segment and can be downloaded.
@@ -100,7 +100,7 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  This integer will be formated according to a possibly contained format tag in the \em \$Time\$ identifier.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           GetMediaSegmentFromTime     (Vector<IBaseUrl> baseurls, String representationID, int bandwidth, int time);
+    public ISegment           GetMediaSegmentFromTime     (Vector<BaseUrl> baseurls, String representationID, int bandwidth, int time);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents a Index Segment and can be downloaded.
@@ -114,5 +114,5 @@ public interface ISegmentTemplate extends IMultipleSegmentBase {
      *                                  This integer will be formated according to a possibly contained format tag in the \em \$Time\$ identifier.
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           GetIndexSegmentFromTime     (Vector<IBaseUrl> baseurls, String representationID, int bandwidth, int time);
+    public ISegment           GetIndexSegmentFromTime     (Vector<BaseUrl> baseurls, String representationID, int bandwidth, int time);
 }

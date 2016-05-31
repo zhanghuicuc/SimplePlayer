@@ -2,13 +2,14 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.helper.myString;
 
+import java.io.Serializable;
 import java.util.InputMismatchException;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class SubRepresentation extends RepresentationBase implements ISubRepresentation{
+public class SubRepresentation extends RepresentationBase implements ISubRepresentation,Serializable {
     public SubRepresentation() {
         this.dependencyLevel = new Vector<Integer>();
         this.contentComponent = new Vector<String>();

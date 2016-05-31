@@ -1,5 +1,6 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**

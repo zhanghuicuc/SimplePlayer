@@ -1,6 +1,8 @@
 package com.zhanghui.mpd;
 
 import org.w3c.dom.Node;
+
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Vector;
 

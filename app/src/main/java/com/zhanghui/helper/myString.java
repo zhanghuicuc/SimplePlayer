@@ -1,12 +1,13 @@
 package com.zhanghui.helper;
 
+import java.io.Serializable;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class myString {
+public class myString implements Serializable {
     public static void Split   (String s, String delim, Vector<String> vector){
 
         StringTokenizer spliter=new StringTokenizer(s,delim);

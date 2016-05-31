@@ -1,11 +1,12 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class SegmentList extends MultipleSegmentBase implements ISegmentList {
+public class SegmentList extends MultipleSegmentBase implements ISegmentList ,Serializable {
     String xlinkHref;
     String xlinkActuate;
     Vector<SegmentURL> segmentURLs;

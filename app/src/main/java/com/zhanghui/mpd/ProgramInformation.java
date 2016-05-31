@@ -1,9 +1,11 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class ProgramInformation extends AbstractMPDElement implements IProgramInformation {
+public class ProgramInformation extends AbstractMPDElement implements IProgramInformation ,Serializable {
     public ProgramInformation() {
         title="";
         source="";

@@ -50,12 +50,12 @@ public interface ISegmentURL extends IMPDElement {
      *  @param      baseurls    a vector of pointers to dash::mpd::IBaseUrl objects that represent the path to the media segment
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToMediaSegment  (Vector<IBaseUrl> baseurls);
+    public ISegment           ToMediaSegment  (Vector<BaseUrl> baseurls);
 
     /**
      *  Returns a pointer to a dash::mpd::ISegment object that represents an index segment and can be downloaded.
      *  @param      baseurls    a vector of pointers to dash::mpd::IBaseUrl objects that represent the path to the index segment
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToIndexSegment ( Vector<IBaseUrl> baseurls);
+    public ISegment           ToIndexSegment ( Vector<BaseUrl> baseurls);
 }

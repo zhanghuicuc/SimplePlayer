@@ -2,12 +2,13 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.helper.myString;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class Subset extends AbstractMPDElement implements ISubset {
+public class Subset extends AbstractMPDElement implements ISubset,Serializable {
     private Vector<Integer> contains;
     private String id;
 

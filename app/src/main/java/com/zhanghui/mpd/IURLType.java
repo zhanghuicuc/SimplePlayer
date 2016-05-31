@@ -28,5 +28,5 @@ public interface IURLType extends  IMPDElement{
      *  @param      baseurls    a reference to a vector of pointers to dash::mpd::IBaseUrl objects representing the path to \c \@sourceURL
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToSegment       (Vector<IBaseUrl> baseurls);
+    public ISegment           ToSegment       (Vector<BaseUrl> baseurls);
 }

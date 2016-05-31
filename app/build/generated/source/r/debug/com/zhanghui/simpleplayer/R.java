@@ -827,11 +827,12 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f0b0001;
         public static final int action_menu_presenter=0x7f0b0002;
         public static final int action_mode_close_button=0x7f0b0024;
-        public static final int action_settings=0x7f0b003e;
+        public static final int action_settings=0x7f0b0040;
         public static final int activity_chooser_view_content=0x7f0b0025;
         public static final int always=0x7f0b0013;
         public static final int beginning=0x7f0b000f;
-        public static final int button_helloworld=0x7f0b003c;
+        public static final int button_parse=0x7f0b003d;
+        public static final int button_play=0x7f0b003e;
         public static final int checkbox=0x7f0b002d;
         public static final int collapseActionView=0x7f0b0014;
         public static final int default_activity_button=0x7f0b0028;
@@ -877,7 +878,8 @@ containing a value of this type.
         public static final int top_action_bar=0x7f0b0020;
         public static final int up=0x7f0b0021;
         public static final int useLogo=0x7f0b000e;
-        public static final int videoView=0x7f0b003d;
+        public static final int videoView=0x7f0b003f;
+        public static final int videoView2=0x7f0b003c;
         public static final int withText=0x7f0b0017;
     }
     public static final class integer {
@@ -931,8 +933,8 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f05000c;
         public static final int action_settings=0x7f05000d;
         public static final int app_name=0x7f05000e;
-        public static final int helloworld=0x7f05000f;
-        public static final int simpleplayer_description=0x7f050010;
+        public static final int simpleplayer_description=0x7f05000f;
+        public static final int simpleplayer_parse=0x7f050010;
         public static final int simpleplayer_pause=0x7f050011;
         public static final int simpleplayer_play=0x7f050012;
         public static final int simpleplayer_replay=0x7f050013;

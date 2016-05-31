@@ -1,11 +1,12 @@
 package com.zhanghui.metric;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class ThroughputMeasurement implements IThroughputMeasurement {
+public class ThroughputMeasurement implements IThroughputMeasurement,Serializable {
     private String             startOfPeriod;
     private long                durationOfPeriod;
     private Arrays receivedBytesPerTrace;

@@ -1,9 +1,11 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class Timeline extends AbstractMPDElement implements ITimeline {
+public class Timeline extends AbstractMPDElement implements ITimeline,Serializable {
     private int startTime;
     private int duration;
     private int repeatCount;

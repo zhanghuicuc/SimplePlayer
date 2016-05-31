@@ -94,7 +94,10 @@ public class DownloadManager {
 		
 		@Override
 		public void run() {
+			//所以这里都是坑爹的，只能下载一个指定url的指定range内容的
+			//并没有用到Segmentmanager
 			segment.setContent(retreiveSegmentContent("bunny_1s_300kbit/bunny_300kbit_dashNonSeg.mp4", segment.getStartByte(), segment.getEndByte()));
+			//不过这里的回调还是很值得学习的
 			listener.segmentRetreived(segment);
 		}
 	}

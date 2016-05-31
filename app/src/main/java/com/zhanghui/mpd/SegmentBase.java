@@ -1,9 +1,11 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class SegmentBase extends AbstractMPDElement implements ISegmentBase {
+public class SegmentBase extends AbstractMPDElement implements ISegmentBase ,Serializable {
     private URLType     initialization;
     private URLType     representationIndex;
     private int    timescale;

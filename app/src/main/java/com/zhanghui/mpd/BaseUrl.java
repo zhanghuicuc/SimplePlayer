@@ -2,12 +2,13 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.metric.HTTPTransactionType;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class BaseUrl extends AbstractMPDElement implements IBaseUrl {
+public class BaseUrl extends AbstractMPDElement implements IBaseUrl,Serializable {
     private String url;
     private String serviceLocation;
     private String byteRange;
@@ -67,7 +68,7 @@ public class BaseUrl extends AbstractMPDElement implements IBaseUrl {
     private double		availabilityTimeOffset;
     private boolean		availabilityTimeComplete;
 
-    public ISegment           ToMediaSegment      (Vector<IBaseUrl> baseurls){
+    public ISegment           ToMediaSegment      (Vector<BaseUrl> baseurls){
         Segment seg = new Segment();
 
         if(seg.Init(baseurls, this.url, this.byteRange, HTTPTransactionType.MediaSegment))

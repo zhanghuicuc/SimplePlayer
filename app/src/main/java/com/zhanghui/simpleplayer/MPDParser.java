@@ -1,6 +1,7 @@
 package com.zhanghui.simpleplayer;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.ParseException;
@@ -11,6 +12,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import android.os.SystemClock;
 import android.sax.Element;
 import android.sax.EndElementListener;
 import android.sax.EndTextElementListener;
@@ -40,16 +42,11 @@ import com.zhanghui.mpd.SubRepresentation;
 import com.zhanghui.mpd.Subset;
 import com.zhanghui.mpd.Timeline;
 import com.zhanghui.mpd.URLType;
-import com.zhanghui.xml.AdaptationSetNode;
-import com.zhanghui.xml.BaseUrlNode;
-import com.zhanghui.xml.MetricsNode;
-import com.zhanghui.xml.PeriodNode;
-import com.zhanghui.xml.ProgramInformationNode;
 
 /**
  * Created by zhanghui on 2016/5/20.
  */
-public class MPDParser {
+public class MPDParser implements Serializable{
     private static final String TAG = MPDParser.class.getSimpleName();
     private static final String NAMESPACE = "urn:mpeg:DASH:schema:MPD:2011";
 
@@ -57,6 +54,14 @@ public class MPDParser {
     private SegmentManager segmentManager = new SegmentManager();
     //private RootElement root;
     private MPD mpd=new MPD();
+
+    public String GetMpdURL() {
+        return mpdURL;
+    }
+
+    public MPD GetMpd() {
+        return mpd;
+    }
 
     public MPDParser(String mpdURL) {
         this.mpdURL = mpdURL;
@@ -1180,6 +1185,7 @@ public class MPDParser {
         new Thread() {
             @Override
             public void run() {
+                int fetchtime=(int)System.currentTimeMillis()/1000;//CurrentUTCTimeInSec
                 try {
                     InputStream stream = new URL(mpdURL).openConnection().getInputStream();
                     parse(stream);
@@ -1191,6 +1197,7 @@ public class MPDParser {
                 } //catch (SAXException e) {
                    // e.printStackTrace();
                 //}
+                mpd.SetFetchTime(fetchtime);
                 Log.d(TAG, "Base URL: " + segmentManager.getBaseURL());
                 int count = 0;
                 while (!segmentManager.isEmpty()) {

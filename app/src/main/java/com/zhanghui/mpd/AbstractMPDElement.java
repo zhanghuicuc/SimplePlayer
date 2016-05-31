@@ -3,13 +3,14 @@ package com.zhanghui.mpd;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public abstract class AbstractMPDElement implements IMPDElement{
+public abstract class AbstractMPDElement implements IMPDElement,Serializable {
     public AbstractMPDElement() {
     }
 

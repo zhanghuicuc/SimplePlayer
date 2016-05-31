@@ -1,11 +1,12 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class AdaptationSet extends RepresentationBase implements IAdaptationSet {
+public class AdaptationSet extends RepresentationBase implements IAdaptationSet,Serializable {
     public AdaptationSet() {
         segmentBase=null;
                 segmentList=null;

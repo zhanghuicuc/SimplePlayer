@@ -1,9 +1,11 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class MultipleSegmentBase extends SegmentBase implements IMultipleSegmentBase {
+public class MultipleSegmentBase extends SegmentBase implements IMultipleSegmentBase ,Serializable {
     private SegmentTimeline                 segmentTimeline;
     private URLType                         bitstreamSwitching;
     private int                        duration;

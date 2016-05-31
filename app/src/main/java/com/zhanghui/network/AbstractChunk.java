@@ -1,5 +1,6 @@
 package com.zhanghui.network;
 
+import android.os.Environment;
 import android.util.Log;
 
 import com.zhanghui.metric.HTTPTransaction;
@@ -8,8 +9,11 @@ import com.zhanghui.metric.IHTTPTransaction;
 import com.zhanghui.metric.ITCPConnection;
 import com.zhanghui.metric.TCPConnection;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,10 +23,21 @@ import java.util.Vector;
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public abstract class AbstractChunk implements IDownloadableChunk {
+public abstract class AbstractChunk implements IDownloadableChunk,Serializable {
+    public AbstractChunk() {
+        this.stateManager=new DownloadStateManager();
+        this.httpTransactions=new Vector<HTTPTransaction>();
+        this.tcpConnections=new Vector<TCPConnection>();
+        this.observers=new Vector<IDownloadObserver>();
+    }
+
+    public InputStream GetBlockStream() {
+        return blockStream;
+    }
+
     /*
-    * Pure public abstract IChunk Interface
-    */
+                * Pure public abstract IChunk Interface
+                */
     public abstract String    AbsoluteURI     ();
     public abstract String    Host            ();
     public abstract int          Port            ();
@@ -101,12 +116,18 @@ public abstract class AbstractChunk implements IDownloadableChunk {
     //public abstract int     Read                    (byte[] data, int len);
     //public abstract int     Peek                    (byte[] data, int len);
     public void    AttachDownloadObserver  (IDownloadObserver observer){
+        if(this.observers==null)
+            this.observers=new Vector<IDownloadObserver>();
         this.observers.add(observer);
+        if(this.stateManager==null)
+            this.stateManager=new DownloadStateManager();
         this.stateManager.Attach(observer);
     }
     public void    DetachDownloadObserver  (IDownloadObserver observer){
-        this.observers.remove(observer);
-        this.stateManager.Detach(observer);
+        if(this.observers!=null)
+            this.observers.remove(observer);
+        if(this.stateManager!=null)
+            this.stateManager.Detach(observer);
     }
     /*
      * Observer Notification
@@ -151,8 +172,7 @@ public abstract class AbstractChunk implements IDownloadableChunk {
                 if(chunk.responseCode/100==2) {
                     //getInputStream获取服务端返回的数据流。
                     chunk.blockStream = httpURLConnection.getInputStream();
-                    chunk.bytesDownloaded=httpURLConnection.getContentLength();
-                    chunk.bytesDownloaded+=bytesDownloaded;
+                    chunk.bytesDownloaded+=httpURLConnection.getContentLength();
                     //TODO:计算下载时间和下载速度
                 }
             }
@@ -198,6 +218,5 @@ public abstract class AbstractChunk implements IDownloadableChunk {
     private static double	DownloadSpeed=0;     // Defaults to bytes/second
     private static double	DownloadTime=0;
     private static double	DownloadSize=0;
-
     //private static int   CurlResponseCallback        (void *contents, size_t size, size_t nmemb, void *userp);
 }

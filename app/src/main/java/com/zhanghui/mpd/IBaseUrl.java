@@ -1,5 +1,6 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
@@ -35,7 +36,7 @@ public interface IBaseUrl extends IMPDElement {
      *  @param      baseurls    a vector of pointers to dash::mpd::IBaseUrl objects that represent the path to the media segment
      *  @return     a pointer to a dash::mpd::ISegment object
      */
-    public ISegment           ToMediaSegment      (Vector<IBaseUrl> baseurls);
+    public ISegment           ToMediaSegment      (Vector<BaseUrl> baseurls);
 
     /**
      *  Returns a double value that specifies offset to define the adjusted segment availability time. \n

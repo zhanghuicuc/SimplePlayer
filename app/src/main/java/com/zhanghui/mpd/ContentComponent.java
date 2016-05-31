@@ -1,11 +1,12 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class ContentComponent extends AbstractMPDElement implements IContentComponent {
+public class ContentComponent extends AbstractMPDElement implements IContentComponent,Serializable {
     public ContentComponent() {
         id=0;
         lang="";

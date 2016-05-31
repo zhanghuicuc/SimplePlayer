@@ -13,10 +13,13 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.VideoView;
 
+import com.zhanghui.mpd.MPD;
+
 public class VideoPlayer extends Activity implements DownloadManagerCallback {
 
 	private static final String TAG = VideoPlayer.class.getSimpleName();
-	
+	private MPD mpd;
+    private String mpdurl;
 	private DownloadManager downloadManager;
 	private MediaPlayer mediaPlayer = new MediaPlayer();
 	private VideoView videoView;
@@ -27,7 +30,8 @@ public class VideoPlayer extends Activity implements DownloadManagerCallback {
 		downloadManager = new DownloadManager(this, "http://222.31.64.171/DASH/bunny_1s/");
 		videoView = (VideoView) findViewById(R.id.videoView);
 		downloadManager.downloadSegmentContent(new Segment(0, 0, 350424));
-		mediaPlayer.setOnPreparedListener(new OnPreparedListener() {
+        mpdurl = getIntent().getStringExtra("extradata");
+        mediaPlayer.setOnPreparedListener(new OnPreparedListener() {
 			@Override
 			public void onPrepared(MediaPlayer mp) {
 				Log.d(TAG, "Media ready");
@@ -62,7 +66,6 @@ public class VideoPlayer extends Activity implements DownloadManagerCallback {
 		try {
 			mediaPlayer.setDataSource(tmpFile.getAbsolutePath());
 			mediaPlayer.setDisplay(videoView.getHolder());
-            videoView.measure(480, 360);
 			mediaPlayer.prepare();
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();

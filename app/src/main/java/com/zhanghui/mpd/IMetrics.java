@@ -1,11 +1,12 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public interface IMetrics extends IMPDElement {
+public interface IMetrics {
     /**
      *  Returns a refernce to a vector of pointers to dash::mpd::IDescriptor objects that specify information about the requested reporting method and formats.\n
      *  For more details refer to section 5.9.4. of <em>ISO/IEC 23009-1, Part 1, 2012</em>.

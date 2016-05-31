@@ -1,11 +1,12 @@
 package com.zhanghui.metric;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class HTTPTransaction implements IHTTPTransaction {
+public class HTTPTransaction implements IHTTPTransaction,Serializable {
     //Identifier of the TCP connection on which the HTTP request was sent.
     private int                                tcpId;
     private HTTPTransactionType                     type;

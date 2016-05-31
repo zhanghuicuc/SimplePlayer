@@ -4,12 +4,13 @@ import com.zhanghui.helper.myString;
 import com.zhanghui.metric.HTTPTransaction;
 import com.zhanghui.metric.TCPConnection;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class MPD extends AbstractMPDElement implements IMPDElement {
+public class MPD extends AbstractMPDElement implements IMPDElement,Serializable {
     public MPD() {
         id="";
         type="static";

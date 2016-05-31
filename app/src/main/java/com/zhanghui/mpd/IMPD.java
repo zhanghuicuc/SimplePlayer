@@ -2,12 +2,13 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.metric.IDASHMetrics;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public abstract class IMPD implements IMPDElement, IDASHMetrics{
+public abstract class IMPD implements IMPDElement, IDASHMetrics,Serializable {
     /**
      *  Returns a reference to a vector of pointers to dash::mpd::IProgramInformation objects that specify descriptive information about the program.\n
      *  For more details refer to the description in section 5.7. of <em>ISO/IEC 23009-1, Part 1, 2012</em>.

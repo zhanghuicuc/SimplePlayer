@@ -1,5 +1,7 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/17.
  */

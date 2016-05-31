@@ -13,9 +13,10 @@
 
 package com.zhanghui.simpleplayer;
 
+import java.io.Serializable;
 import java.util.ArrayDeque;
 
-public class SegmentManager {
+public class SegmentManager implements Serializable{
 	private final ArrayDeque<String> segments = new ArrayDeque<String>();
 	private final ArrayDeque<String> mediaRanges=new ArrayDeque<String>();
 	private String baseURL;

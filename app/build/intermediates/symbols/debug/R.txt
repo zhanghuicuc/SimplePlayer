@@ -246,11 +246,12 @@ int id action_context_bar 0x7f0b001d
 int id action_menu_divider 0x7f0b0001
 int id action_menu_presenter 0x7f0b0002
 int id action_mode_close_button 0x7f0b0024
-int id action_settings 0x7f0b003e
+int id action_settings 0x7f0b0040
 int id activity_chooser_view_content 0x7f0b0025
 int id always 0x7f0b0013
 int id beginning 0x7f0b000f
-int id button_helloworld 0x7f0b003c
+int id button_parse 0x7f0b003d
+int id button_play 0x7f0b003e
 int id checkbox 0x7f0b002d
 int id collapseActionView 0x7f0b0014
 int id default_activity_button 0x7f0b0028
@@ -296,7 +297,8 @@ int id title 0x7f0b002b
 int id top_action_bar 0x7f0b0020
 int id up 0x7f0b0021
 int id useLogo 0x7f0b000e
-int id videoView 0x7f0b003d
+int id videoView 0x7f0b003f
+int id videoView2 0x7f0b003c
 int id withText 0x7f0b0017
 int integer abc_max_action_buttons 0x7f090000
 int layout abc_action_bar_decor 0x7f030000
@@ -342,8 +344,8 @@ int string abc_shareactionprovider_share_with 0x7f05000b
 int string abc_shareactionprovider_share_with_application 0x7f05000c
 int string action_settings 0x7f05000d
 int string app_name 0x7f05000e
-int string helloworld 0x7f05000f
-int string simpleplayer_description 0x7f050010
+int string simpleplayer_description 0x7f05000f
+int string simpleplayer_parse 0x7f050010
 int string simpleplayer_pause 0x7f050011
 int string simpleplayer_play 0x7f050012
 int string simpleplayer_replay 0x7f050013

@@ -1,11 +1,12 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
 import java.util.Vector;
 import com.zhanghui.metric.HTTPTransactionType;
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class SegmentURL extends AbstractMPDElement implements ISegmentURL {
+public class SegmentURL extends AbstractMPDElement implements ISegmentURL ,Serializable {
     private String mediaURI;
     private String mediaRange;
     private String indexURI;
@@ -18,7 +19,7 @@ public class SegmentURL extends AbstractMPDElement implements ISegmentURL {
         indexURI="";
     }
 
-    public ISegment  ToMediaSegment  (Vector<IBaseUrl> baseurls){
+    public Segment  ToMediaSegment  (Vector<BaseUrl> baseurls){
         Segment seg = new Segment();
 
         if(seg.Init(baseurls, this.mediaURI, this.mediaRange, HTTPTransactionType.MediaSegment))
@@ -28,7 +29,7 @@ public class SegmentURL extends AbstractMPDElement implements ISegmentURL {
         return null;
     }
 
-    public ISegment  ToIndexSegment  (Vector<IBaseUrl> baseurls){
+    public ISegment  ToIndexSegment  (Vector<BaseUrl> baseurls){
         Segment seg = new Segment();
 
         if(seg.Init(baseurls, this.indexURI, this.indexRange, HTTPTransactionType.IndexSegment))

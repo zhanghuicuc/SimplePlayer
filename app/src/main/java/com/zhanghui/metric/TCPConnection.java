@@ -1,9 +1,11 @@
 package com.zhanghui.metric;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class TCPConnection implements ITCPConnection {
+public class TCPConnection implements ITCPConnection ,Serializable {
     //Identifier of the TCP connection on which the HTTP request was sent.
     private int        tcpId;
     //IP Address of the interface over which the client is receiving the TCP data.

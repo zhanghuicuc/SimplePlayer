@@ -1,26 +1,27 @@
 package com.zhanghui.helper;
 
+import java.io.Serializable;
 import java.util.StringTokenizer;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class Path {
+public class Path implements Serializable{
     /*
     * 拼接两个路径，确保中间有一个'/'分隔符
 	*/
     public static String              CombinePaths        ( String path1,  String path2){
-        if(path1 == "")
+        if(path1 .compareTo("")==0 )
             return path2;
-        if(path2 == "")
+        if(path2 .compareTo("")==0 )
             return path1;
 
         char path1Last  = path1.charAt(path1.length() - 1);
         char path2First = path2.charAt(0);
 
         if(path1Last == '/' && path2First == '/')
-            return path1 + path2.substring(1, path2.length());
+            return path1 + path2.substring(1, 1+path2.length());
 
         if(path1Last != '/' && path2First != '/')
             return path1 + "/" + path2;
@@ -46,30 +47,32 @@ public class Path {
         return ret;
     }
 
-    public static boolean                     GetHostPortAndPath  ( String url, String host, int port, String path){
+    public boolean                     GetHostPortAndPath  ( String url, String host, int port, String path){
         String hostPort="";
         int found=0;
         int pathBegin=0;
-        if (url.substring(0, 7) == "http://" || url.substring(0, 8) == "https://")
+        if (url.substring(0, 7) .compareTo("http://") ==0 || url.substring(0, 8).compareTo("https://") ==0 )
         {
             found = url.indexOf("//");
             pathBegin = url.indexOf('/', found + 2);//在"//"之后的第一个'/'为路径的开始，如http://www.baidu.com:80/hahahahah.mp4
             path = url.substring(pathBegin);
 
-            hostPort = url.substring(found + 2, pathBegin - (found + 2));
+            hostPort = url.substring(found + 2, pathBegin);
             found = hostPort.indexOf(':');
             if (found !=-1)
             {
                 port = Integer.parseInt(hostPort.substring(found + 1));
+                host = hostPort.substring(0, found);
             }
-            host = hostPort.substring(0, found);
+            else
+                host = hostPort;
             return (host.length() > 0) && (path.length() > 0);
         }
 
         return false;
     }
 
-    public static boolean                     GetStartAndEndBytes ( String byteRange, int startByte, int endByte){
+    public boolean                     GetStartAndEndBytes ( String byteRange, int startByte, int endByte){
         int found = 0;
 
         found = byteRange.indexOf('-');

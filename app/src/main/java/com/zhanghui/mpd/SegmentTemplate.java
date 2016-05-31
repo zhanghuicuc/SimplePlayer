@@ -2,39 +2,41 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.helper.myString;
 import com.zhanghui.metric.HTTPTransactionType;
+
+import java.io.Serializable;
 import java.util.Vector;
 /*
  *Created by zhanghui on 2016/5/19.
  */
 
-public class SegmentTemplate extends MultipleSegmentBase implements ISegmentTemplate{
+public class SegmentTemplate extends MultipleSegmentBase implements ISegmentTemplate,Serializable {
     public SegmentTemplate() {
         media="";
         index="";
         initialization="";
         bitstreamSwitching="";
     }
-    public ISegment           ToInitializationSegment        ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth)
+    public ISegment           ToInitializationSegment        ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth)
     {
         return ToSegment(this.initialization, baseurls, representationID, bandwidth, HTTPTransactionType.InitializationSegment,0,0);
     }
-    public ISegment           ToBitstreamSwitchingSegment    ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth)
+    public ISegment           ToBitstreamSwitchingSegment    ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth)
     {
         return ToSegment(this.bitstreamSwitching, baseurls, representationID, bandwidth, HTTPTransactionType.BitstreamSwitchingSegment,0,0);
     }
-    public ISegment           GetMediaSegmentFromNumber      ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth, int number)
+    public ISegment           GetMediaSegmentFromNumber      ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth, int number)
     {
         return ToSegment(this.media, baseurls, representationID, bandwidth, HTTPTransactionType.MediaSegment, number,0);
     }
-    public ISegment           GetIndexSegmentFromNumber      ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth, int number)
+    public ISegment           GetIndexSegmentFromNumber      ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth, int number)
     {
         return ToSegment(this.index, baseurls, representationID, bandwidth, HTTPTransactionType.IndexSegment, number,0);
     }
-    public ISegment           GetMediaSegmentFromTime        ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth, int time)
+    public ISegment           GetMediaSegmentFromTime        ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth, int time)
     {
         return ToSegment(this.media, baseurls, representationID, bandwidth, HTTPTransactionType.MediaSegment, 0, time);
     }
-    public ISegment           GetIndexSegmentFromTime        ( Vector<IBaseUrl> baseurls,  String representationID, int bandwidth, int time)
+    public ISegment           GetIndexSegmentFromTime        ( Vector<BaseUrl> baseurls,  String representationID, int bandwidth, int time)
     {
         return ToSegment(this.index, baseurls, representationID, bandwidth, HTTPTransactionType.IndexSegment, 0, time);
     }
@@ -95,7 +97,7 @@ public class SegmentTemplate extends MultipleSegmentBase implements ISegmentTemp
         uri = formattedNumber;
     }
 
-    private ISegment   ToSegment           ( String uri,  Vector<IBaseUrl > baseurls,  String representationID, int bandwidth,
+    private ISegment   ToSegment           ( String uri,  Vector<BaseUrl > baseurls,  String representationID, int bandwidth,
                                      HTTPTransactionType type, int number, int time) {
         Segment seg = new Segment();
 

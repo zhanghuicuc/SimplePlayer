@@ -1,9 +1,11 @@
 package com.zhanghui.mpd;
 
+import java.io.Serializable;
+
 /**
  * Created by zhanghui on 2016/5/19.
  */
-public class Descriptor extends AbstractMPDElement implements IDescriptor {
+public class Descriptor extends AbstractMPDElement implements IDescriptor,Serializable {
     private String schemeIdUri;
     private String value;
     private String id;

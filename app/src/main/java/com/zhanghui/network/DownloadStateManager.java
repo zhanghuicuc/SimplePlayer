@@ -1,16 +1,18 @@
 package com.zhanghui.network;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/18.
  */
-public class DownloadStateManager {
+public class DownloadStateManager implements Serializable {
     private DownloadState state;
     private Vector<IDownloadObserver> observers;
 
     public DownloadStateManager() {
-        observers=new Vector<IDownloadObserver>();
+        this.observers=new Vector<IDownloadObserver>();
+        this.state=DownloadState.NOT_STARTED;
     }
 
     public synchronized DownloadState State         (){
@@ -18,7 +20,12 @@ public class DownloadStateManager {
     }
     public synchronized void            State         (DownloadState state){
         this.state = state;
-        notifyAll();
+        Notify();
+    }
+    public void            Notify        ()
+    {
+        for(int i = 0; i < this.observers.size(); i++)
+            this.observers.elementAt(i).OnDownloadStateChanged(this.state);
     }
     public synchronized void            WaitState     (DownloadState state){
         while(this.state != state){

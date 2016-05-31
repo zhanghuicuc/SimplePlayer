@@ -2,12 +2,13 @@ package com.zhanghui.mpd;
 
 import com.zhanghui.metric.HTTPTransactionType;
 
+import java.io.Serializable;
 import java.util.Vector;
 
 /**
  * Created by zhanghui on 2016/5/17.
  */
-public class URLType extends AbstractMPDElement implements IURLType {
+public class URLType extends AbstractMPDElement implements IURLType,Serializable {
     String                         sourceURL;
     String                        range;
     HTTPTransactionType type;
@@ -39,7 +40,7 @@ public class URLType extends AbstractMPDElement implements IURLType {
         range="";
     }
 
-    public ISegment           ToSegment       (Vector<IBaseUrl> baseurls){
+    public Segment           ToSegment       (Vector<BaseUrl> baseurls){
         Segment seg = new Segment();
 
         if(seg.Init(baseurls, this.sourceURL, this.range, this.type))
